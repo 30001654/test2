@@ -184,4 +184,12 @@ namespace Test2
         }
 
     }
+
+    public class Q9
+    {
+        public static void q9()
+        {
+            string[] names = { };
+        }
+    }
 }
