@@ -11,47 +11,33 @@ namespace Test2
         static void Main( string[] args )
         {
 
-            while (true)
+            Console.WriteLine("Enter the number of the question to view or type 'exit' to close");
+            var menu = Console.ReadLine();
+            switch (menu)
             {
-                Console.WriteLine("Enter the number of the question to view or type 'exit' to close");
-                var menu = Console.ReadLine();
-
-                if ( menu == "1" )
-                {
+                case "1":
                     Q1();
-                } else if (menu == "2")
-                {
-                    Q2();
-                }
-                else if (menu == "3")
-                {
-                    Q3();
-                }
-                else if (menu == "4")
-                {
-                    Q4();
-                }
-                else if (menu == "5")
-                {
-                    Q5.q5();
-                }
-                else if (menu == "6")
-                {
-                    Q6.q6();
-                }
-                else if (menu == "7")
-                {
-                    Q7.q7();
-                }
-                else if (menu == "exit")
-                {
                     break;
-                }
-                else
-                {
-                    Console.WriteLine( "Error code: 666" );
-                }
-
+                case "2":
+                    Q2();
+                    break;
+                case "3":
+                    Q3();
+                    break;
+                case "4":
+                    Q4();
+                    break;
+                case "5":
+                    Q5.q5();
+                    break;
+                case "6":
+                    Q6.q6();
+                    break;
+                case "7":
+                    Q7.q7();
+                    break;
+                case "exit":
+                    break;
             }
        
         }
@@ -192,4 +178,26 @@ namespace Test2
             string[] names = { };
         }
     }
+
+    public class Input
+    {
+        public static string StrInput(string strIn)
+            {               
+                Console.ReadLine();
+            }
+
+        public static int IntInput(int intIn)
+            {
+
+                if(int.TryParse)
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("THis is not a number");
+                }
+            }
+    }
 }
+
